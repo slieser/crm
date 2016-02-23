@@ -30,3 +30,6 @@ _ReSharper*/
 .hg
 .hgignore
 *.crunchsolution.local.xml
+*.ncrunchsolution
+*.ncrunchsolution.user
+_NCrunch_*/
