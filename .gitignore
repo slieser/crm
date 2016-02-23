@@ -33,3 +33,4 @@ _ReSharper*/
 *.ncrunchsolution
 *.ncrunchsolution.user
 _NCrunch_*/
+*.ncrunchproject
