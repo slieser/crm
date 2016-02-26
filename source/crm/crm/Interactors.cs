@@ -39,10 +39,10 @@ namespace crm
 
         public IEnumerable<contracts.KundeDetails> Kunde_speichern(contracts.KundeDetails kundeDetails) {
             IdGenerator.Hat_Id(kundeDetails,
-                k => {
+                onJa: k => {
                     kundenStore.Update(k);
                 },
-                k => {
+                onNein: k => {
                     IdGenerator.Id_hinzufügen(k);
                     kundenStore.Add(k);
                 });

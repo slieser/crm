@@ -102,14 +102,6 @@ namespace crm.ui
             }
         }
 
-        public void Setze_Tags(IEnumerable<contracts.Tag> tags) {
-            tvTags.Items.Clear();
-
-            foreach (var tag in tags) {
-                var treeViewItem = new TreeViewItem { Header = tag.Bezeichnung };
-                tvTags.Items.Add(treeViewItem);
-            }
-        }
 
         public void Kundendetails_setzen(contracts.KundeDetails kundeDetails) {
             CollapseEditButtons();

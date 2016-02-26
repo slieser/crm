@@ -14,7 +14,10 @@ namespace crm.logic
             return Guid.NewGuid().ToString();
         }
 
-        public static void Hat_Id(KundeDetails kundeDetails, Action<KundeDetails> onJa, Action<KundeDetails> onNein) {
+        public static void Hat_Id(
+            KundeDetails kundeDetails, 
+            Action<KundeDetails> onJa, 
+            Action<KundeDetails> onNein) {
             if (string.IsNullOrWhiteSpace(kundeDetails.Id)) {
                 onNein(kundeDetails);
             }

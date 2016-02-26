@@ -24,7 +24,6 @@ namespace crm.ui.tests
         [Test, Explicit, Apartment(ApartmentState.STA)]
         public void Dialog_mit_Beispieldaten_anzeigen() {
             sut.Alle_Kunden_setzen(Beispieldaten_Kunden());
-            sut.Setze_Tags(Beispieldaten_Tags());
             sut.Kundendetails_setzen(Beispieldaten_KundenDetails());
 
             sut.ShowDialog();

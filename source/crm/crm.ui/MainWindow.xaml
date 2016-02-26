@@ -32,11 +32,11 @@
                     </Expander.Header>-->
                     <TreeView x:Name="tvKunden" BorderThickness="0" FontSize="14"/>
                 </Expander>
-                <Expander Header="Wiedervorlage - HEUTE" MaxHeight="300" FontSize="14" BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3"/>
+                <!--<Expander Header="Wiedervorlage - HEUTE" MaxHeight="300" FontSize="14" BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3"/>
                 <Expander Header="Wiedervorlage - DEMNÄCHST" MaxHeight="300" FontSize="14"  BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3"/>
                 <Expander Header="Tags" MaxHeight="300" FontSize="14"  BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3">
                     <TreeView x:Name="tvTags" BorderThickness="0" FontSize="14"/>
-                </Expander>
+                </Expander>-->
             </StackPanel>
         </ScrollViewer>
         
