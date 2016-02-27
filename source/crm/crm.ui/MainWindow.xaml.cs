@@ -108,10 +108,21 @@ namespace crm.ui
             DataContext = Map(kundeDetails);
         }
 
+        public void Kunde_zur_Bearbeitung_setzen(contracts.KundeDetails kundeDetails) {
+            Kundendetails_setzen(kundeDetails);
+            ShowEditButtons_for_Kunde();
+        }
+
+        public void Kontakt_zur_Bearbeitung_setzen(contracts.KundeDetails kundeDetails) {
+            Kundendetails_setzen(kundeDetails);
+            ShowEditButtons_for_Kontakt();
+        }
+
         private KundeDetails Map(contracts.KundeDetails kundeDetails) {
             var result = mapper.Map<contracts.KundeDetails, KundeDetails>(kundeDetails);
             return result;
         }
+
         private contracts.KundeDetails Map(KundeDetails kundeDetails) {
             var result = mapper.Map<KundeDetails, contracts.KundeDetails>(kundeDetails);
             return result;
@@ -132,15 +143,5 @@ namespace crm.ui
         public event Action Kontakt_bearbeiten_abbrechen;
 
         public event Action<string> Selektion_geändert;
-
-        public void Kunde_zur_Bearbeitung_setzen(contracts.KundeDetails kundeDetails) {
-            Kundendetails_setzen(kundeDetails);
-            ShowEditButtons_for_Kunde();
-        }
-
-        public void Kontakt_zur_Bearbeitung_setzen(contracts.KundeDetails kundeDetails) {
-            Kundendetails_setzen(kundeDetails);
-            ShowEditButtons_for_Kontakt();
-        }
     }
 }

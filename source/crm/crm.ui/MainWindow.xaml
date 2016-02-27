@@ -24,19 +24,8 @@
         <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto">
             <StackPanel>
                 <Expander Header ="Kunden"  MaxHeight="300" FontSize="14" BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3">
-                    <!--<Expander.Header>
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                            <Label Content="Kunden" FontSize="14"/>
-                            <Button x:Name="btnNeuerKunde" Content="+" Width="24" Height="24" FontSize="14" Margin="3" Visibility="{Binding ElementName=expKunden, Path=IsExpanded, Converter={StaticResource  VisibilityConverter}}"/>
-                        </StackPanel>
-                    </Expander.Header>-->
                     <TreeView x:Name="tvKunden" BorderThickness="0" FontSize="14"/>
                 </Expander>
-                <!--<Expander Header="Wiedervorlage - HEUTE" MaxHeight="300" FontSize="14" BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3"/>
-                <Expander Header="Wiedervorlage - DEMNÄCHST" MaxHeight="300" FontSize="14"  BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3"/>
-                <Expander Header="Tags" MaxHeight="300" FontSize="14"  BorderThickness="1" BorderBrush="Black" Margin="3" Padding="3">
-                    <TreeView x:Name="tvTags" BorderThickness="0" FontSize="14"/>
-                </Expander>-->
             </StackPanel>
         </ScrollViewer>
         
